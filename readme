@@ -1,0 +1,17 @@
+[[ .* ]]
+@rep @ -> row 0
+  
+[[field1 -> Code]] -> 0 / struct
+@rep@ change with struct @rep
+
+[[]] 0
+[[]] 1
+@rep @
+
+
+if model 
+  
+@if Header con  no.of conditions sperated by ";" @if Header con 
+@if header true no.of true same as no.of conditions sperated by ";"  @if header true 
+@if header false single value for now for all conditions @if header false
+

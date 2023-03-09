@@ -1,0 +1,16 @@
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+
+
+
+const model_nameSchema = new Schema( {
+
+    [[fieldnamevalue : { @fieldtype type : fieldtypevalue ,@fieldtype @ref ref : "refvalue", @ref @require require : [requirevalue," fieldnamevalue is required " ], @require @min min: minvalue, @min @unique unique :uniquevalue, @unique @max max: maxvalue, @max @regex validate :{ validator : (v) => validator.regexvalueValidator(v), message: props => `${props.value} is not a valid `},@regex},]]
+
+    @rep@
+    
+
+  },  {timestamps:true}
+  )
+
+module.exports = mongoose.model("model_name", model_nameSchema );

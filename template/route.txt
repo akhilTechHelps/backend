@@ -1,0 +1,19 @@
+const express = require("express")
+const model_nameController = require("../controller/model_nameController")
+const uploader = require(".././middleware/uploader")
+const router = express.Router()
+
+router
+  .post("/", model_nameController.storemodel_name)
+  .get("/", model_nameController.getmodel_nameById)
+  .get("/list", model_nameController.getmodel_nameList)
+  .put("/", model_nameController.updatemodel_nameByID)
+  .delete("/", model_nameController.deletemodel_nameById)
+  .post("/bulkInsert", uploader.single("fileCSV"), model_nameController.insertBulkmodel_name)
+  .post("/bulkUpdate", uploader.single("fileCSV"),model_nameController.updateBulkmodel_name)
+
+module.exports = router
+
+
+
+
