@@ -1,5 +1,6 @@
-const { set } = require("mongoose")
-const model_name = require("../models/model_nameModel")
+import mongoose from 'mongoose';
+import model_name from '../models/model_nameModel.js';
+
 
 const getmodel_nameList = async (req, res, next) => {
   try {
@@ -38,6 +39,19 @@ const deletemodel_nameById = async (req, res, next) => {
     res.status(200).json({ messgae: "model_name deleted" })
   } catch (err) {
     res.status(400).json({ messgae: err.message })
+  }
+}
+
+const deletemodel_nameByID = async (req, res, next) => {
+  try {
+    const id = req.params.id;
+    const result = await model_name.findByIdAndRemove(id);
+    if (!result) {
+      return res.status(404).json({ message: 'model_name not found' });
+    }
+    res.status(200).json({ message: "model_name deleted successfully" });
+  } catch (error) {
+    res.status(400).json({ message: "An error Occurred" });
   }
 }
 
@@ -86,7 +100,7 @@ const insertBulkmodel_name = async (req, res, next) => {
   }
 }
 
-module.exports = {
+export default {
   getmodel_nameList,
   storemodel_name,
   getmodel_nameById,

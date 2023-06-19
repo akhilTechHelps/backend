@@ -1,0 +1,19 @@
+rule1: {
+  table: property,
+  exposed : true,
+  o1 :{
+    where : [property:_id,var:var1]
+  }
+  authority:{
+    join : [o1,authority],
+    select : [*],
+    from : authority,
+    pipe : [{
+      where : {
+        eq : [authority:propertyId,o1:_id]
+      }
+    }]
+  }
+
+
+let s = "authority=join(o1,authority).from(authority).select(*).pipe[o2=from(authority).select(*).where(eq(authority:propertyId,o1:_id))]"

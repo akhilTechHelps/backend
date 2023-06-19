@@ -1,11 +1,11 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
-
+import mongoose from 'mongoose';
+const { Schema } = mongoose;
+import validator from './validator.js';
 
 
 const model_nameSchema = new Schema( {
 
-    [[fieldnamevalue : { @fieldtype @iffieldtypecon for_key;om @iffieldtypecon  type : @iffieldtypetrue Schema.Types.ObjectId;number @iffieldtypetrue   @iffieldtypefalse fieldtypevalue @iffieldtypefalse,@fieldtype @ref ref : refvalue, @ref @require require : [requirevalue,"fieldnamevalue is required " ], @require @min min: minvalue, @min @unique unique :uniquevalue, @unique @max max: maxvalue, @max @regex validate :{ validator : (v) => validator.regexvalueValidator(v), message: props => `${props.value} is not a valid `},@regex},]]
+    [[fieldnamevalue : { @fieldtype @iffieldtypecon foreignkey;Id @iffieldtypecon  type : @iffieldtypetrue Schema.Types.ObjectId; Schema.Types.ObjectId @iffieldtypetrue  @iffieldtypefalse fieldtypevalue @iffieldtypefalse,@fieldtype @ref ref : 'refvalue', @ref @require require : [requirevalue,"fieldnamevalue is required " ], @require @min min: minvalue, @min @unique unique :uniquevalue, @unique @max max: maxvalue, @max @regex validate :{ validator : (v) => validator.regexvalueValidator(v), message: props => `${props.value} is not a valid `},@regex},]]
 
     @rep@ 
     
@@ -13,4 +13,6 @@ const model_nameSchema = new Schema( {
   },  {timestamps:true}
   )
 
-module.exports = mongoose.model("model_name", model_nameSchema );
+const model_name = mongoose.model("model_name", model_nameSchema);
+
+export default model_name;

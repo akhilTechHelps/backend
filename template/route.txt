@@ -1,6 +1,6 @@
-const express = require("express")
-const model_nameController = require("../controller/model_nameController")
-const uploader = require(".././middleware/uploader")
+import express from 'express';
+import model_nameController from "../controller/model_nameController.js";
+import uploader from "../middleware/uploader.js";
 const router = express.Router()
 
 router
@@ -12,8 +12,7 @@ router
   .post("/bulkInsert", uploader.single("fileCSV"), model_nameController.insertBulkmodel_name)
   .post("/bulkUpdate", uploader.single("fileCSV"),model_nameController.updateBulkmodel_name)
 
-module.exports = router
-
+export default router;
 
 
 

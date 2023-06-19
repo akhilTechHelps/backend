@@ -1,0 +1,741 @@
+{
+  "models": [
+    {
+      "name": "properties",
+      "fields": [
+        {
+          "fieldname": "City",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Location",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "PlotNumber",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "y",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Size",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Floor",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Accommodation",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Possession",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Price",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Facing",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "ParkFacing",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Corner",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Description",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Title",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "y",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "BuilderName",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Contact",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "EditorChoice",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "FolderName",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "PhotoType",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "y",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Image",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "THUMBNAL",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "user_id",
+          "fieldtype": "foreignkey",
+          "ref": "users",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "approved",
+          "fieldtype": "Boolean",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "fields": [
+        {
+          "fieldname": "name",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "email",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "y",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "password",
+          "fieldtype": "String ",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "contact",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "y",
+          "auto_generated": "n",
+          "unique": "y",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Role_id",
+          "fieldtype": "foreignkey",
+          "ref": "UserRole",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Parentid",
+          "fieldtype": "Number",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        }
+      ]
+    },
+    {
+      "name": "UserRolePermission",
+      "fields": [
+        {
+          "fieldname": "PR_id",
+          "fieldtype": "Number",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Role_id",
+          "fieldtype": "foreignkey",
+          "ref": "roles",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Permission_id",
+          "fieldtype": "foreignkey",
+          "ref": "UserPermission",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        }
+      ]
+    },
+    {
+      "name": "UserPermission",
+      "fields": [
+        {
+          "fieldname": "Permission_id",
+          "fieldtype": "Number",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Permission_name",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Permission_description",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        }
+      ]
+    },
+    {
+      "name": "UserRole",
+      "fields": [
+        {
+          "fieldname": "Role_id",
+          "fieldtype": "Number",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Role_name",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        }
+      ]
+    },
+    {
+      "name": "customers",
+      "fields": [
+        {
+          "fieldname": "name",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "contact",
+          "fieldtype": "Number",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "email",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "y",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        }
+      ]
+    },
+    {
+      "name": "Masters",
+      "fields": [
+        {
+          "fieldname": "Type",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Code",
+          "fieldtype": "Number",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Value",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Tags",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Parentid",
+          "fieldtype": "Number",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        }
+      ]
+    },
+    {
+      "name": "CustomerTagging",
+      "fields": [
+        {
+          "fieldname": "tagedFromid",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "taggedToType",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "taggedTold",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "TaggingPurpose",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "FieldTags",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Extras",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        }
+      ]
+    },
+    {
+      "name": "CustomerAudit",
+      "fields": [
+        {
+          "fieldname": "Entity",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "ChangedFrom",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "ChangedTo",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        }
+      ]
+    },
+    {
+      "name": "UserTagging",
+      "fields": [
+        {
+          "fieldname": "tagedFromid",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "taggedToType",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "taggedTold",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "TaggingPurpose",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "FieldTags",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Extras",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        }
+      ]
+    },
+    {
+      "name": "UserAudit",
+      "fields": [
+        {
+          "fieldname": "Entity",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "ChangedFrom",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "ChangedTo",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        }
+      ]
+    }
+  ]
+}

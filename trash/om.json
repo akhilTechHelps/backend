@@ -1,0 +1,94 @@
+{
+  "rule1": {
+    "table": "property",
+    "exposed": true,
+    "o1": {
+      "where": [
+        "property:_id",
+        "var:var1"
+      ]
+    },
+    "authority": {
+      "join": [
+        "o1",
+        "authority"
+      ],
+      "from": "authority",
+      "select": "*",
+      "pipe": [
+        {
+          "where": {
+            "eq": [
+              "authority:propertyId",
+              "o1:_id"
+            ]
+          }
+        }
+      ]
+    },
+    "maps": {
+      "join": [
+        "o1",
+        "maps"
+      ],
+      "from": "maps",
+      "select": "*",
+      "pipe": [
+        {
+          "where": {
+            "eq": [
+              "maps:propertyId",
+              "o1:_id"
+            ]
+          }
+        }
+      ]
+    },
+    "output": {
+      "join": [
+        "o1",
+        "leads"
+      ],
+      "from": "leads",
+      "select": [
+        "cheque",
+        "buildup",
+        "comments"
+      ],
+      "pipe": [
+        {
+          "where": [
+            "leads:pid",
+            "o1:_id"
+          ]
+        },
+        {
+          "isTagged": {
+            "join": [
+              "lead",
+              "tags"
+            ],
+            "from": "tags",
+            "select": "*",
+            "pipe": [
+              {
+                "where": [
+                  "tags:typeToId",
+                  "lead:_id"
+                ]
+              },
+              {
+                "where": [
+                  "tags:typeFormId",
+                  "var:var2"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
+
+"output=join(o1,leads).from(leads).select(cheque,buildup,comments).pipe[where(leads:pid,o1:_id);isTagged=join(lead,tags).from(tags).select(*).pipe[where(eq(lead:pid,maps:_id));where(tags:typeToId,lead:_id);where(tags:typeFormId,var:var2)];createdBy=join(lead,users).from(users).select(name).pipe[where(users:_id,lead:salesUserID)]]"
