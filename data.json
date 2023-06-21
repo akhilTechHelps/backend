@@ -31,7 +31,7 @@
           "ref": "n",
           "require": "y",
           "auto_generated": "n",
-          "unique": "y",
+          "unique": "n",
           "regex": "n",
           "min": "n",
           "max": "n"
@@ -141,7 +141,7 @@
           "ref": "n",
           "require": "y",
           "auto_generated": "n",
-          "unique": "y",
+          "unique": "n",
           "regex": "n",
           "min": "n",
           "max": "n"
@@ -196,7 +196,7 @@
           "ref": "n",
           "require": "y",
           "auto_generated": "n",
-          "unique": "y",
+          "unique": "n",
           "regex": "n",
           "min": "n",
           "max": "n"
@@ -267,7 +267,7 @@
           "ref": "n",
           "require": "y",
           "auto_generated": "n",
-          "unique": "y",
+          "unique": "n",
           "regex": "n",
           "min": "n",
           "max": "n"
@@ -307,7 +307,7 @@
         },
         {
           "fieldname": "Parentid",
-          "fieldtype": "Number",
+          "fieldtype": "String",
           "ref": "n",
           "require": "n",
           "auto_generated": "n",
@@ -509,6 +509,17 @@
         {
           "fieldname": "Parentid",
           "fieldtype": "Number",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Label",
+          "fieldtype": "String",
           "ref": "n",
           "require": "n",
           "auto_generated": "n",
@@ -727,6 +738,253 @@
         {
           "fieldname": "ChangedTo",
           "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        }
+      ]
+    },
+    {
+      "name": "property",
+      "fields": [
+        {
+          "fieldname": "City",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Location",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "PlotNumber",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Size",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Floor",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Accommodation",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Possession",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Price",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Facing",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "ParkFacing",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Corner",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Description",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Title",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "BuilderName",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Contact",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "EditorChoice",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "FolderName",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "PhotoType",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "Image",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "THUMBNAL",
+          "fieldtype": "String",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "user_id",
+          "fieldtype": "foreignkey",
+          "ref": "n",
+          "require": "n",
+          "auto_generated": "n",
+          "unique": "n",
+          "regex": "n",
+          "min": "n",
+          "max": "n"
+        },
+        {
+          "fieldname": "approved",
+          "fieldtype": "Boolean",
           "ref": "n",
           "require": "n",
           "auto_generated": "n",
